@@ -13,6 +13,9 @@ body {
     color: #ffffff;
     animation: change 70s infinite ease-in-out;
 }
+
+/*navbar*/
+
 @keyframes change{
     0%{
       background-image: url(assets/Shot1.jpg);
@@ -118,3 +121,6 @@ body {
     cursor:pointer;
     display: none;
 }
+
+
+/*home*/

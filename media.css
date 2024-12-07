@@ -58,3 +58,35 @@
         transition-delay: calc(.10s * var(--i));
     }
 }
+
+@media (max-width: 768px) {
+
+
+    .filter-buttons {
+        margin: 1.5rem 0;
+    }
+
+    .character-card {
+        width: calc(100% / 2 - 1rem); /* Adjust for 2 cards per row */
+        max-width: 250px;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .filter-btn {
+        padding: 1rem 1rem;
+        margin-bottom: 10px;
+        font-size: 0.9rem;
+        
+    }
+
+    .character-card {
+        width: 100%; /* 1 card per row */
+        max-width: none;
+    }
+
+    .character-card h3 {
+        font-size: 1rem;
+    }
+}
