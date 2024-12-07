@@ -11,84 +11,125 @@
 <body>
     <header class="header">
         <a href="#" class="logo">Star Wars</a>
-
         <input type="checkbox" id="check">
         <label for="check" class="icons">
             <i class='bx bx-menu' id="menu-icon"></i>
             <i class='bx bx-x' id="close-icon"></i>
         </label>
         <nav class="navbar">
-            <a href="intro.html" style="--i:0;">Introduction</a>
-            <a href="index.html" style="--i:1;">Home</a>
-            <a href="movies.html" style="--i:2;">Movies</a>
-            <a href="characters.html" style="--i:3;">Characters</a>
-            <a href="planets.html" style="--i:4;">Planets</a>
-            <a href="lightsabers.html" style="--i:5;">Lightsabers</a>
-            <a href="authors.html" style="--i:6;">Authors</a>
+            <a href="intro.html">Introduction</a>
+            <a href="index.html">Home</a>
+            <a href="movies.html">Movies</a>
+            <a href="characters.html">Characters</a>
+            <a href="planets.html">Planets</a>
+            <a href="lightsabers.html">Lightsabers</a>
+            <a href="authors.html">Authors</a>
         </nav>
     </header>
 
     <!-- Movies Section -->
-    <section class="movies-section">
+    <section class="movies-section container">
+        <!-- Controls Section -->
         <div class="controls">
             <button id="sort-chrono">Chronological Order</button>
             <button id="sort-release">Release Date Order</button>
         </div>
-        <div class="movie-display">
-            <p id="movie-description">Click on a movie to see details here.</p>
-        </div>
-        <div class="movie-display">
+
+        <!-- Main Movie Display -->
+        <div class="main-content">
             <button id="left-btn" class="nav-btn">◀</button>
-            <div>
+            <div class="image">
                 <img id="movie-image" src="assets/Display.jpg" alt="Movie Image">
-                <p id="movie-description"></p>
+            </div>
+            <div class="description">
+                <h1 id="movie-title">Movie Title</h1>
+                <p id="movie-detailed-description">
+                    Click on a thumbnail to view details of the movie here.
+                </p>
+                <button id="trailer-button" class="see-trailer">See Trailer</button>
             </div>
             <button id="right-btn" class="nav-btn">▶</button>
         </div>
 
-        <div class="movie-details">
-            <h2 id="movie-title">Movie Title</h2>
-            <p id="movie-detailed-description">Here is a more detailed description of the movie. Select a movie to view more information.</p>
-        </div>
+        <!-- Thumbnails Section -->
+        <div class="thumbnails">
+            <div class="thumbnail" data-order="1" data-release="1999"
 
-        <div class="movie-thumbnails">
-        <div class="thumbnail" 
-             data-title="Episode 1: The Phantom Menace(1999)" 
-             data-description="Movie 1" 
-             data-detailed-description="Set decades before the original trilogy, the Galactic Republic faces the threat of the Trade Federation. Jedi Knights Qui-Gon Jinn and Obi-Wan Kenobi encounter young Anakin Skywalker, a boy with extraordinary Force potential." 
-             data-image="assets/Episode1BG.jpg">
-            <img src="assets/Episode1Poster.jpg" alt="Movie 1 Thumbnail">
-        </div>
-            <div class="thumbnail" data-title="Movie 2" data-description="Description for Movie 2" data-image="assets/Episode2BG.jpg">
-                <img src="assets/Episode2Poster.jpg" alt="Movie 2 Thumbnail">
+                data-title="Episode I: The Phantom Menace (1999)" 
+                data-description="Set decades before the original trilogy, the Galactic Republic faces the threat of the Trade Federation. Jedi Knights Qui-Gon Jinn and Obi-Wan Kenobi encounter young Anakin Skywalker, a boy with extraordinary Force potential."
+                data-image="assets/Episode1BG.jpg">
+                <img src="assets/Episode1Poster.jpg" alt="Episode I">
             </div>
-            <div class="thumbnail" data-title="Movie 3" data-description="Description for Movie 3" data-image="assets/Episode3BG.jpg">
-                <img src="assets/Episode3Poster.jpg" alt="Movie 3 Thumbnail">
+            <div class="thumbnail" data-order="2" data-release="2002"
+
+                data-title="Episode II: Attack of the Clones (2002)" 
+                data-description="Ten years later, the galaxy is on the brink of war. Anakin, now a Jedi apprentice, begins a forbidden romance with Padmé Amidala, while Obi-Wan investigates a mysterious clone army."
+                data-image="assets/Episode2BG.jpg">
+                <img src="assets/Episode2Poster.jpg" alt="Episode II">
             </div>
-            <div class="thumbnail" data-title="Movie 4" data-description="Description for Movie 1" data-image="assets/Episode4BG.jpeg">
-                <img src="assets/Episode4Poster.jpg" alt="Movie 4 Thumbnail">
+            <div class="thumbnail" data-order="3" data-release="2005"
+
+                data-title="Episode III: Revenge of the Sith (2005)" 
+                data-description="The Clone Wars reach their climax. Anakin succumbs to the dark side and becomes Darth Vader under Emperor Palpatine’s influence, leading to the fall of the Jedi Order."
+                data-image="assets/Episode3BG.jpg">
+                <img src="assets/Episode3Poster.jpg" alt="Episode III">
             </div>
-            <div class="thumbnail" data-title="Movie 5" data-description="Description for Movie 1" data-image="assets/Episode5BG.jpeg">
-                <img src="assets/Episode5Poster.jpg" alt="Movie 5 Thumbnail">
-            </div>
-            <div class="thumbnail" data-title="Movie 6" data-description="Description for Movie 1" data-image="assets/Episode6BG.jpg">
-                <img src="assets/Episode6Poster.jpg" alt="Movie 6 Thumbnail">
-            </div>
-            <div class="thumbnail" data-title="Movie 7" data-description="Description for Movie 1" data-image="assets/Episode7BG.jpg">
-                <img src="assets/Episode7Poster.jpg" alt="Movie 7 Thumbnail">
-            </div>
-            <div class="thumbnail" data-title="Movie 8" data-description="Description for Movie 1" data-image="assets/Episode8BG.jpeg">
-                <img src="assets/Episode8Poster.jpg" alt="Movie 8 Thumbnail">
-            </div>
-            <div class="thumbnail" data-title="Movie 9" data-description="Description for Movie 1" data-image="assets/Episode9BG.jpg">
-                <img src="assets/Episode9Poster.jpg" alt="Movie 9 Thumbnail">
-            </div>
-            <div class="thumbnail" data-title="Movie 10" data-description="Description for Movie 1" data-image="assets/RogueBG.jpeg">
-                <img src="assets/RoguePoster.jpg" alt="Movie 10 Thumbnail">
-            </div>
-            <div class="thumbnail" data-title="Movie 11" data-description="Description for Movie 1" data-image="assets/SoloBG.png">
+            <div class="thumbnail" data-order="4" data-release="2018"
+
+                data-title="Solo: A Star Wars Story (2018)" 
+                data-description="A young Han Solo embarks on dangerous adventures, meets Chewbacca, and encounters Lando Calrissian while navigating the criminal underworld." 
+                data-image="assets/SoloBG.png">
                 <img src="assets/SoloPoster.jpg" alt="Movie 11 Thumbnail">
             </div>
+            <div class="thumbnail" data-order="5" data-release="2016"
+
+                data-title="Rogue One: A Star Wars Story (2016) " 
+                data-description="A group of rebels, led by Jyn Erso, undertakes a daring mission to steal the Death Star plans, setting the stage for the events of A New Hope."  
+                data-image="assets/RogueBG.jpeg">
+                <img src="assets/RoguePoster.jpg" alt="Movie 10 Thumbnail">
+            </div>
+            <div class="thumbnail" data-order="6" data-release="1977"
+
+                data-title="Episode IV: A New Hope (1977)" 
+                data-description="The Rebel Alliance fights against the Galactic Empire. Luke Skywalker discovers his destiny as a Jedi and joins Leia, Han, and the rebels to destroy the Death Star." 
+                data-image="assets/ANH.png">
+                <img src="assets/Episode4Poster.jpg" alt="Movie 4 Thumbnail">
+            </div>
+            <div class="thumbnail" data-order="7" data-release="1980"
+
+                data-title="Episode V: The Empire Strikes Back (1980)" 
+                data-description="The Empire strikes back against the Rebels. Luke trains with Yoda while Vader reveals his true identity. Han and Leia’s love story unfolds amidst turmoil." 
+                data-image="assets/ESB.jpg">
+                <img src="assets/Episode5Poster.jpg" alt="Movie 5 Thumbnail">
+            </div>
+            <div class="thumbnail" data-order="8" data-release="1983"
+
+                data-title="Episode VI: Return of the Jedi (1983)" 
+                data-description="The Rebels mount a final assault against the Empire. Luke confronts Vader and the Emperor, leading to the redemption of Anakin Skywalker and the fall of the Empire." 
+                data-image="assets/Episode6BG.jpg">
+                <img src="assets/Episode6Poster.jpg" alt="Movie 6 Thumbnail">
+            </div>
+            <div class="thumbnail" data-order="9" data-release="2015"
+
+                data-title="Episode VII: The Force Awakens (2015)" 
+                data-description="Thirty years later, the galaxy faces a new threat from the First Order. Rey, a scavenger, discovers her connection to the Force and joins Han and Leia in the fight." 
+                data-image="assets/Episode7BG.jpg">
+                <img src="assets/Episode7Poster.jpg" alt="Movie 7 Thumbnail">
+            </div>
+            <div class="thumbnail" data-order="10" data-release="2017"
+
+                data-title="Episode VIII: The Last Jedi (2017)" 
+                data-description="Rey seeks training from Luke Skywalker, who has retreated into exile. Meanwhile, the Resistance fights for survival against the relentless First Order." 
+                data-image="assets/Episode8BG.jpeg">
+                <img src="assets/Episode8Poster.jpg" alt="Movie 8 Thumbnail">
+            </div>
+            <div class="thumbnail" data-order="11" data-release="2019"
+
+                data-title="Episode IX: The Rise of Skywalker (2019)" 
+                data-description="The Resistance faces the resurrected Emperor Palpatine. Rey discovers her true lineage and fulfills her destiny in the ultimate battle against the Sith." 
+                data-image="assets/Episode9BG.jpg">
+                <img src="assets/Episode9Poster.jpg" alt="Movie 9 Thumbnail">
+            </div
         </div>
     </section>
 
