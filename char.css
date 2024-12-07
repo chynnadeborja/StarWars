@@ -124,6 +124,10 @@ body {
     text-align: center;
     cursor: pointer;
     transition: transform 0.3s;
+    color: transparent;
+    -webkit-text-stroke: 0.5px #ffe81f;
+    text-decoration: none;
+    font-weight: 700;
 }
 
 .character-card:hover {
@@ -143,14 +147,14 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background: rgba(0, 0, 0, 0.8);
+    background: black;
     padding: 2rem;
     border-radius: 10px;
     width: 80%;
     max-width: 700px;  /* Limit max width */
     display: none;
     z-index: 200;
-    color: #fff;
+    color: #ffe81f;
     box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.8);
 }
 
@@ -172,11 +176,16 @@ body {
 }
 
 .character-details .details-content h2 {
+    color: transparent;
+    -webkit-text-stroke: 0.5px #ffe81f;
+    text-decoration: none;
+    font-weight: 700;
     font-size: 1.5rem;
     margin-bottom: 10px;
 }
 
 .character-details .details-content p {
+    font-family: 'Courier New', Courier, monospace;
     font-size: 1rem;
     margin: 5px 0;
 }

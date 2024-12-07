@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Star Wars Universe</title>
+    <link rel="stylesheet" href="mov.css">
+    <link rel="stylesheet" href="media.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <header class="header">
+        <a href="#" class="logo">Star Wars</a>
+
+        <input type="checkbox" id="check">
+        <label for="check" class="icons">
+            <i class='bx bx-menu' id="menu-icon"></i>
+            <i class='bx bx-x' id="close-icon"></i>
+        </label>
+        <nav class="navbar">
+            <a href="intro.html" style="--i:0;">Introduction</a>
+            <a href="index.html" style="--i:1;">Home</a>
+            <a href="movies.html" style="--i:2;">Movies</a>
+            <a href="characters.html" style="--i:3;">Characters</a>
+            <a href="planets.html" style="--i:4;">Planets</a>
+            <a href="lightsabers.html" style="--i:5;">Lightsabers</a>
+            <a href="authors.html" style="--i:6;">Authors</a>
+        </nav>
+    </header>
+
+    <!-- Movies Section -->
+    <section class="movies-section">
+        <div class="controls">
+            <button id="sort-chrono">Chronological Order</button>
+            <button id="sort-release">Release Date Order</button>
+        </div>
+        <div class="movie-display">
+            <p id="movie-description">Click on a movie to see details here.</p>
+        </div>
+        <div class="movie-display">
+            <button id="left-btn" class="nav-btn">◀</button>
+            <div>
+                <img id="movie-image" src="assets/Display.jpg" alt="Movie Image">
+                <p id="movie-description"></p>
+            </div>
+            <button id="right-btn" class="nav-btn">▶</button>
+        </div>
+
+        <div class="movie-details">
+            <h2 id="movie-title">Movie Title</h2>
+            <p id="movie-detailed-description">Here is a more detailed description of the movie. Select a movie to view more information.</p>
+        </div>
+
+        <div class="movie-thumbnails">
+        <div class="thumbnail" 
+             data-title="Episode 1: The Phantom Menace(1999)" 
+             data-description="Movie 1" 
+             data-detailed-description="Set decades before the original trilogy, the Galactic Republic faces the threat of the Trade Federation. Jedi Knights Qui-Gon Jinn and Obi-Wan Kenobi encounter young Anakin Skywalker, a boy with extraordinary Force potential." 
+             data-image="assets/Episode1BG.jpg">
+            <img src="assets/Episode1Poster.jpg" alt="Movie 1 Thumbnail">
+        </div>
+            <div class="thumbnail" data-title="Movie 2" data-description="Description for Movie 2" data-image="assets/Episode2BG.jpg">
+                <img src="assets/Episode2Poster.jpg" alt="Movie 2 Thumbnail">
+            </div>
+            <div class="thumbnail" data-title="Movie 3" data-description="Description for Movie 3" data-image="assets/Episode3BG.jpg">
+                <img src="assets/Episode3Poster.jpg" alt="Movie 3 Thumbnail">
+            </div>
+            <div class="thumbnail" data-title="Movie 4" data-description="Description for Movie 1" data-image="assets/Episode4BG.jpeg">
+                <img src="assets/Episode4Poster.jpg" alt="Movie 4 Thumbnail">
+            </div>
+            <div class="thumbnail" data-title="Movie 5" data-description="Description for Movie 1" data-image="assets/Episode5BG.jpeg">
+                <img src="assets/Episode5Poster.jpg" alt="Movie 5 Thumbnail">
+            </div>
+            <div class="thumbnail" data-title="Movie 6" data-description="Description for Movie 1" data-image="assets/Episode6BG.jpg">
+                <img src="assets/Episode6Poster.jpg" alt="Movie 6 Thumbnail">
+            </div>
+            <div class="thumbnail" data-title="Movie 7" data-description="Description for Movie 1" data-image="assets/Episode7BG.jpg">
+                <img src="assets/Episode7Poster.jpg" alt="Movie 7 Thumbnail">
+            </div>
+            <div class="thumbnail" data-title="Movie 8" data-description="Description for Movie 1" data-image="assets/Episode8BG.jpeg">
+                <img src="assets/Episode8Poster.jpg" alt="Movie 8 Thumbnail">
+            </div>
+            <div class="thumbnail" data-title="Movie 9" data-description="Description for Movie 1" data-image="assets/Episode9BG.jpg">
+                <img src="assets/Episode9Poster.jpg" alt="Movie 9 Thumbnail">
+            </div>
+            <div class="thumbnail" data-title="Movie 10" data-description="Description for Movie 1" data-image="assets/RogueBG.jpeg">
+                <img src="assets/RoguePoster.jpg" alt="Movie 10 Thumbnail">
+            </div>
+            <div class="thumbnail" data-title="Movie 11" data-description="Description for Movie 1" data-image="assets/SoloBG.png">
+                <img src="assets/SoloPoster.jpg" alt="Movie 11 Thumbnail">
+            </div>
+        </div>
+    </section>
+
+    <script src="mov.js"></script>
+</body>
+</html>
