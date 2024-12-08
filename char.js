@@ -19,10 +19,16 @@ const characterDetails = [
     details: "A smuggler who becomes a hero of the Rebel Alliance. Known for his charm and piloting skills, he plays a key role in destroying the Death Star and defeating the Empire."
   },
   {
+    name: "Chewbacca",
+    category: "rebel",
+    image: "char/chewbacca.jpg",
+    details: "Wookiee warrior and Han Solo's companion."
+  },
+  {
     name: "Rey",
     category: "rebel",
-    image: "char/hansolo.jpg",
-    details: "A scavenger from Jakku who discovers her strong connection to the Force. She trains as a Jedi and ultimately defeats Emperor Palpatine, bringing balance to the Force."
+    image: "char/chewbacca.jpg",
+    details:"Rey is the main protagonist of the Star Wars sequel trilogy. A scavenger from Jakku, she discovers her strong connection to the Force and becomes a key member of the Resistance. Throughout her journey, Rey seeks to understand her identity and her place in the galaxy. She learns she is the granddaughter of Emperor Palpatine but rejects her Sith legacy, choosing to embrace the Jedi path. Rey ultimately defeats Palpatine, adopts the Skywalker name, and becomes a symbol of hope and redemption for the galaxy."
   },
   {
     "name": "Jyn Erso",
@@ -32,10 +38,47 @@ const characterDetails = [
   {
     "name": "Poe Dameron",
     "category": "rebel",
+    image: "",
     "details": "A skilled pilot for the Resistance and a loyal leader in the fight against the First Order. Known for his bravery and loyalty to Leia Organa."
   },
   {
-    name: "Darth Vader/ Anakin Skywalker",
+    name: "Cassian Andor",
+    category: "rebel",
+    image: "",
+    details: "Rebel intelligence officer, co-star with Jyn Erso in Rogue One."
+  },
+  {
+    name: "Obi-Wan Kenobi",
+    category: "rebel",
+    image: "",
+    details: " Jedi Master, mentor to both Anakin and Luke Skywalker."
+  },
+  {
+    name: "Mon Mothma",
+    category: "rebel",
+    image: "",
+    details: "  Political leader of the Rebel Alliance."
+  },
+  {
+    name: "Lando Calrissian",
+    category: "rebel",
+    image: "",
+    details: "Former smuggler, joined the Rebel Alliance."
+  },
+  {
+    name: "Wedge Antilles",
+    category: "rebel",
+    image: "",
+    details: "Rebel pilot who played key roles in multiple battles."
+  },
+  {
+    name: "Ahsoka Tano",
+    category: "rebel",
+    image: "",
+    details: "Former Jedi, major character in Star Wars: The Clone Wars and Star Wars Rebels."
+  },
+  {
+    name: "Darth Vader",
     category: "empire",
     image: "char/vader.jpg",
     details:  "A fallen Jedi Knight turned Sith Lord who serves as the Emperor's enforcer. Despite his dark deeds, he is redeemed by his son, Luke Skywalker, and sacrifices himself to destroy the Emperor."
@@ -54,30 +97,53 @@ const characterDetails = [
     details: "A ruthless commander of the Galactic Empire, responsible for overseeing the construction and operation of the Death Star. Known for his cold efficiency and loyalty to Emperor Palpatine."
   },
   {
-    name: "Kylo Ren / Ben Solo",
+    name: "Kylo Ren",
     category: "Empire",
-    image: "char/c3po.jpeg",
+    image: "",
     details: "The son of Leia Organa and Han Solo, he turns to the dark side and becomes a leader of the First Order. Struggles with his identity and eventually redeems himself by helping Rey defeat Emperor Palpatine."
   },
   {
     name: "Captain Phasma",
     category: "Empire",
-    image: "char/c3po.jpeg",
+    image: "",
     details: "A high-ranking stormtrooper commander in the First Order, known for her chrome armor and strict discipline. She oversees the First Order's stormtrooper corps."
   },
   {
     name: "General Hux",
     category: "Empire",
-    image: "char/c3po.jpeg",
+    image: "",
     details:  "A calculating and ambitious leader in the First Order, responsible for the Starkiller Base. He harbors a bitter rivalry with Kylo Ren."
   },
   {
-    name: "General Hux",
+    name: "Boba Fett",
     category: "Empire",
-    image: "char/c3po.jpeg",
-    details:  "A calculating and ambitious leader in the First Order, responsible for the Starkiller Base. He harbors a bitter rivalry with Kylo Ren."
+    image: "",
+    details:  "Bounty hunter employed by the Empire, later works for Jabba the Hutt."
   },
-
+  {
+    name: "Darth Maul",
+    category: "Empire",
+    image: "",
+    details:  "Sith apprentice, primarily active in The Phantom Menace."
+  },
+  {
+    name: "Director Krennic",
+    category: "Empire",
+    image: "",
+    details:  " Officer in the Imperial military, responsible for the Death Star project."
+  },
+  {
+    name: "Admiral Piett",
+    category: "Empire",
+    image: "",
+    details:  " Imperial officer in The Empire Strikes Back and Return of the Jedi."
+  },
+  {
+    name: "Stormtroopers",
+    category: "Empire",
+    image: "",
+    details:  "Elite soldiers of the Empire"
+  },
   {
     name: "R2-D2",
     category: "Bots",
@@ -101,6 +167,42 @@ const characterDetails = [
     category: "Bots",
     image: "char/K2SO.jpg",
     details: "A reprogrammed Imperial security droid who aids Jyn Erso and Cassian Andor in Rogue One. Known for his sarcastic wit and combat skills."
+  },
+  {
+    name: "IG-88",
+    category: "Bots",
+    image: "char/K2SO.jpg",
+    details: "Bounty hunter droid."
+  },
+  {
+    name: "L3-37",
+    category: "Bots",
+    image: "char/K2SO.jpg",
+    details: "Lando Calrissian's droid partner in Solo: A Star Wars Story."
+  },
+  {
+    name: "TX-21",
+    category: "Bots",
+    image: "char/K2SO.jpg",
+    details: " A battle droid, part of the Separatist army."
+  },
+  {
+    name: "R4-P17",
+    category: "Bots",
+    image: "char/K2SO.jpg",
+    details: "Astromech droid serving Jedi Master Obi-Wan Kenobi."
+  },
+  {
+    name: "Chopper",
+    category: "Bots",
+    image: "char/K2SO.jpg",
+    details: " Astromech droid, member of the Star Wars Rebels crew."
+  },
+  {
+    name: "General Grievous",
+    category: "Bots",
+    image: "char/K2SO.jpg",
+    details: "Droid General in The Clone Wars, leader of the Separatist army."
   },
 
 
