@@ -9,38 +9,13 @@
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
-    <header class="header">
-        <a href="#" class="logo">Star Wars</a>
 
-        <input type="checkbox" id="check">
-        <label for="check" class="icons">
-            <i class='bx bx-menu' id="menu-icon"></i>
-            <i class='bx bx-x' id="close-icon"></i>
-        </label>
-        <nav class="navbar">
-            <a href="intro.html" style="--i:0;">Introduction</a>
-            <a href="index.html" style="--i:1;">Home</a>
-            <a href="mov.html" style="--i:2;">Movies</a>
-            <a href="characters.html" style="--i:3;">Characters</a>
-            <a href="planets.html" style="--i:4;">Planets</a>
-            <a href="lightsabers.html" style="--i:5;">Lightsabers</a>
-            <a href="authors.html" style="--i:6;">Authors</a>
-        </nav>
-    </header>
+    
+    <div class="card">
+        <h1>Animate Borders</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque ad exercitationem voluptatem ullam et, natus impedit quae veniam optio a doloremque officiis beatae, itaque nesciunt nostrum quasi molestiae laudantium dolor asperiores soluta sint sed ratione cupiditate. Laudantium earum reiciendis enim.</p>
+      </div>
 
-    <script>
-        // JavaScript to add 'active' class to current page link
-        document.addEventListener("DOMContentLoaded", function() {
-            const navLinks = document.querySelectorAll(".navbar a");
-            const currentPath = window.location.pathname; // Get the current URL path
-
-            navLinks.forEach(link => {
-                if (link.href.includes(currentPath)) {
-                    link.classList.add("active");  // Add the active class to the matching link
-                }
-            });
-        });
-    </script>
 
 
 </body>
