@@ -166,7 +166,7 @@
 
             function stopSound() {
                 lightsaberSound.pause();
-                lightsaberSound.currentTime = 0;  // Reset to the beginning of the sound
+                lightsaberSound.currentTime = 0;  
             }
 
             let currentSlide = 0;
@@ -185,12 +185,11 @@
             // JavaScript to add 'active' class to current page link
             document.addEventListener("DOMContentLoaded", function() {
                 const navLinks = document.querySelectorAll(".navbar a");
-                const currentPath = window.location.pathname; // Get the current URL path
+                const currentPath = window.location.pathname; 
         
                 navLinks.forEach(link => {
                     if (link.href.includes(currentPath)) {
-                        link.classList.add("active");  // Add the active class to the matching link
-                    }
+                        link.classList.add("active");  }
                 });
             });
         </script>

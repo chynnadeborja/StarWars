@@ -255,18 +255,26 @@ body {
 
 .feature {
   -webkit-text-stroke: 0.1px black;
-  background: linear-gradient(145deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5));
   border-radius: 15px;
+  background: #000;
   padding: 1.5rem;
   text-align: center;
   width: 250px;
   color: #fff;
-  box-shadow: 
-    0 0 10px 4px rgba(253, 255, 110, 0.8), 
-    0 0 15px rgba(0, 0, 0, 0.6),      
-    0 15px 30px rgba(0, 0, 0, 0.3),      
-    inset 0 0 10px rgba(0, 0, 0, 0.5);  
-  animation: glow 3s infinite alternate, shadowMovement 4s infinite alternate;
+  position: relative;
+}
+.feature::after {
+  content:'';
+  position:absolute;
+  height: 100%;
+  width: 100%;
+  background-image: conic-gradient(#fff, #ffe81f, #ff9f00, #000, #ff9f00,#ffe81f,#fff );
+  border-radius: 10px;
+  top:50%;
+  left: 50%;
+  translate: -50% -50%;
+  z-index: -1;
+  padding: 3px;
 }
 
 @keyframes glow {

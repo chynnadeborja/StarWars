@@ -97,7 +97,7 @@ body {
 /*home*/
 .filter-buttons {
     text-align: center;
-    margin: 2rem 0; /* Increased margin for spacing below the navbar */
+    margin: 2rem 0; 
     flex-wrap: wrap;
 }
 
@@ -134,17 +134,13 @@ body {
     border-radius: 10px;
     position: relative;
 }
-@property --angle{
-    syntax: "<angle>";
-    initial-value: 0deg;
-    inherits: false;
-  }
+
 .character-card::after,.character-card::before{
     content:'';
     position:absolute;
     height: 100%;
     width: 100%;
-    background-image: conic-gradient(from var(--angle),#fff, #ffe81f, #ff9f00, #000, #ff9f00,#ffe81f,#fff );
+    background-image: conic-gradient(#fff, #ffe81f, #ff9f00, #000, #ff9f00,#ffe81f,#fff );
     border-radius: 10px;
     top:50%;
     left: 50%;
@@ -153,11 +149,6 @@ body {
     padding: 3px;
 
 }
-.character-card::before{
-    filter: blur(1.5rem);
-    opacity: 0.5;
-}
-
 
 .character-card:hover {
     transform: scale(1.05);
@@ -176,52 +167,34 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background: rgba(0, 0, 0, 0.9); /* Semi-transparent background */
+    background: rgb(0, 0, 0); 
     padding: 3rem;
     border-radius: 15px;
     width: 90%;
-    max-width: 900px; /* Increased max width */
+    max-width: 900px; 
     display: none;
     z-index: 200;
     color: #fff;
     box-shadow: 0px 6px 25px rgba(0, 0, 0, 0.9);
     border: 2px solid #ffe81f;
-    overflow-y: auto; /* Add scroll for large content */
-    max-height: 80vh; /* Limit height to viewport */
+    overflow-y: auto; 
+    max-height: 80vh; 
 }
 
 .character-details.active {
     border-radius: 10px;
     display: block;
-    animation: glow 3s ease-in-out infinite; /* Lengthen animation for smoother glow */
 }
-
-/* Glow animation for popup */
-@keyframes glow {
-    0% {
-        border-color: #ffe81f;
-        box-shadow: 0 0 15px 3px rgba(255, 232, 31, 0.8);
-    }
-    50% {
-        border-color: #ff9f00;
-        box-shadow: 0 0 25px 5px rgba(255, 159, 0, 1);
-    }
-    100% {
-        border-color: #ffe81f;
-        box-shadow: 0 0 15px 3px rgba(255, 232, 31, 0.8);
-    }
-}
-
 
 
 .character-details .details-content {
     display: flex;
-    align-items: center; /* Align image and text */
-    gap: 20px; /* Space between image and details */
+    align-items: center;
+    gap: 20px; 
 }
 
 .character-details img {
-    width: 350px;  /* Set a reasonable size */
+    width: 350px; 
     height: 300px;
     border-radius: 8px;
     object-fit: cover;
