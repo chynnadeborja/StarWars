@@ -66,12 +66,18 @@ body {
 
 .navbar a {
     font-size: 1rem;
-    color: transparent;
-    -webkit-text-stroke: 0.5px #ffe81f;
+    color: #ffe81f;
     text-decoration: none;
     font-weight: 500;
     margin-left: 2.5rem;
-}
+  }
+  
+  .navbar a.active {
+    font-size: 1.5rem;
+    color: transparent;  
+    -webkit-text-stroke: 0.5px #ffe81f;
+    font-weight: bold; 
+  }
 
 #check{
     display: none;

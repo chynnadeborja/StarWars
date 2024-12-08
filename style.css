@@ -102,12 +102,18 @@ body {
 }
 
 .navbar a {
-    font-size: 1rem;
-    color: transparent;
-    -webkit-text-stroke: 0.5px #ffe81f;
-    text-decoration: none;
-    font-weight: 500;
-    margin-left: 2.5rem;
+  font-size: 1rem;
+  color: #ffe81f;
+  text-decoration: none;
+  font-weight: 500;
+  margin-left: 2.5rem;
+}
+
+.navbar a.active {
+  font-size: 1.5rem;
+  color: transparent;  
+  -webkit-text-stroke: 0.5px #ffe81f;
+  font-weight: bold; 
 }
 
 #check{
@@ -183,14 +189,11 @@ body {
   -webkit-text-stroke: 0.8px black;
 
 }
-
-
-/* Banner Section */
 /* Banner Section */
 .home-banner {
   position: relative;
   text-align: center;
-  margin-top: 80px; /* Adjusted to ensure it clears the navbar */
+  margin-top: 80px; 
 }
 
 .banner-image {
@@ -226,9 +229,6 @@ body {
   text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.7), 0 0 25px #ffe81f, 0 0 5px #ffe81f;
 }
 
-
-
-
 /* Features Section */
 .features {
   margin: 2rem 0;
@@ -261,10 +261,10 @@ body {
   width: 250px;
   color: #fff;
   box-shadow: 
-    0 0 10px 4px rgba(253, 255, 110, 0.8),  /* Glowing yellow shadow */
-    0 0 15px rgba(0, 0, 0, 0.6),         /* Soft black shadow */
-    0 15px 30px rgba(0, 0, 0, 0.3),       /* Deeper, softer shadow */
-    inset 0 0 10px rgba(0, 0, 0, 0.5);    /* Inner shadow */
+    0 0 10px 4px rgba(253, 255, 110, 0.8), 
+    0 0 15px rgba(0, 0, 0, 0.6),      
+    0 15px 30px rgba(0, 0, 0, 0.3),      
+    inset 0 0 10px rgba(0, 0, 0, 0.5);  
   animation: glow 3s infinite alternate, shadowMovement 4s infinite alternate;
 }
 
@@ -278,10 +278,10 @@ body {
   }
   100% {
     box-shadow: 
-      0 0 20px 10px rgba(253, 255, 110, 0.8),  /* More intense yellow glow */
-      0 0 25px rgba(0, 0, 0, 0.7),         /* Stronger black shadow */
-      0 25px 50px rgba(0, 0, 0, 0.4),       /* Stronger depth */
-      inset 0 0 20px rgba(0, 0, 0, 0.6);    /* More pronounced inner shadow */
+      0 0 20px 10px rgba(253, 255, 110, 0.8), 
+      0 0 25px rgba(0, 0, 0, 0.7),        
+      0 25px 50px rgba(0, 0, 0, 0.4),       
+      inset 0 0 20px rgba(0, 0, 0, 0.6);   
   }
 }
 

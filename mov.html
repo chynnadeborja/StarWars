@@ -19,7 +19,7 @@
         <nav class="navbar">
             <a href="intro.html">Introduction</a>
             <a href="index.html">Home</a>
-            <a href="movies.html">Movies</a>
+            <a href="mov.html">Movies</a>
             <a href="characters.html">Characters</a>
             <a href="planets.html">Planets</a>
             <a href="lightsabers.html">Lightsabers</a>
@@ -129,5 +129,18 @@
     </section>
 
     <script src="mov.js"></script>
+    <script>
+        // JavaScript to add 'active' class to current page link
+        document.addEventListener("DOMContentLoaded", function() {
+            const navLinks = document.querySelectorAll(".navbar a");
+            const currentPath = window.location.pathname; // Get the current URL path
+
+            navLinks.forEach(link => {
+                if (link.href.includes(currentPath)) {
+                    link.classList.add("active");  // Add the active class to the matching link
+                }
+            });
+        });
+    </script>
 </body>
 </html>

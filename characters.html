@@ -85,6 +85,20 @@
     </main>
 
     <script src="char.js"></script>
+    <script src="mov.js"></script>
+    <script>
+        // JavaScript to add 'active' class to current page link
+        document.addEventListener("DOMContentLoaded", function() {
+            const navLinks = document.querySelectorAll(".navbar a");
+            const currentPath = window.location.pathname; // Get the current URL path
+
+            navLinks.forEach(link => {
+                if (link.href.includes(currentPath)) {
+                    link.classList.add("active");  // Add the active class to the matching link
+                }
+            });
+        });
+    </script>
 
 </body>
 

@@ -21,7 +21,7 @@
         <nav class="navbar">
             <a href="intro.html" style="--i:0;">Introduction</a>
             <a href="index.html" style="--i:1;">Home</a>
-            <a href="movies.html" style="--i:2;">Movies</a>
+            <a href="mov.html" style="--i:2;">Movies</a>
             <a href="characters.html" style="--i:3;">Characters</a>
             <a href="planets.html" style="--i:4;">Planets</a>
             <a href="lightsabers.html" style="--i:5;">Lightsabers</a>
@@ -176,5 +176,18 @@
     </main>
 
     <script src="plan.js"></script>
+    <script>
+        // JavaScript to add 'active' class to current page link
+        document.addEventListener("DOMContentLoaded", function() {
+            const navLinks = document.querySelectorAll(".navbar a");
+            const currentPath = window.location.pathname; // Get the current URL path
+
+            navLinks.forEach(link => {
+                if (link.href.includes(currentPath)) {
+                    link.classList.add("active");  // Add the active class to the matching link
+                }
+            });
+        });
+    </script>
 </body>
 </html>

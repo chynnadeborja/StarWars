@@ -16,7 +16,6 @@ body {
 
 /*navbar*/
 
-
 .header{
     position: fixed;
     top: 0;
@@ -67,12 +66,18 @@ body {
 
 .navbar a {
     font-size: 1rem;
-    color: transparent;
-    -webkit-text-stroke: 0.5px #ffe81f;
+    color: #ffe81f;
     text-decoration: none;
     font-weight: 500;
     margin-left: 2.5rem;
-}
+  }
+  
+  .navbar a.active {
+    font-size: 1.5rem;
+    color: transparent;  
+    -webkit-text-stroke: 0.5px #ffe81f;
+    font-weight: bold; 
+  }
 
 #check{
     display: none;
@@ -90,14 +95,14 @@ body {
 .page-title {  
     font-size: 3rem;
     font-weight: bold;
-    color: #ffe81f; /* Yellow color */
+    color: #ffe81f;
     text-transform: uppercase;
     letter-spacing: 2px;
     position: relative;
     text-align: center;
     margin-top: 1rem;
-    background: linear-gradient(90deg, #ffe81a, #f0eded); /* Gradient effect */
-    -webkit-background-clip: text; /* Apply the gradient to text */
+    background: linear-gradient(90deg, #ffe81a, #f0eded); 
+    -webkit-background-clip: text; 
     background-clip: text; 
     color: transparent;
     text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3), 0 0 30px rgba(255, 255, 255, 0.5);
@@ -106,7 +111,7 @@ body {
 }
 
 .page-title:hover {
-    transform: scale(1.1);  /* Slight scaling effect on hover */
+    transform: scale(1.1); 
 }
 
 .container {
@@ -115,12 +120,9 @@ body {
 }
 
 
-
 .movies-section {
-    margin-top: 10px; /* Ensure it appears below the navbar */
+    margin-top: 10px; 
 }
-
-
 
 /* Main Content Layout */
 .main-content {
@@ -133,9 +135,9 @@ body {
 }
 
 .image img {
-    width: 100%; /* Set width to 100% for smaller screens */
-    max-width: 800px; /* Maintain max width for larger screens */
-    height: 500px; /* Adjust height proportionally */
+    width: 100%; 
+    max-width: 800px;
+    height: 500px; 
     border-radius: 8px;
 }
 
@@ -144,12 +146,11 @@ body {
     padding: 20px;
     border-radius: 15px;
     box-shadow: 0 0 10px 2px #ffe81f;
-    font-size: 1rem; /* Adjust font size */
-    flex: 1 1 300px; /* Allow flex grow/shrink with a minimum size */
-}
+    font-size: 1rem; 
+    flex: 1 1 300px;}
 
 .description h1 {
-    font-size: 1.5rem; /* Adjust for smaller screens */
+    font-size: 1.5rem;
     color: transparent;
     -webkit-text-stroke: 0.5px #ffe81f;
     text-decoration: none;
@@ -165,7 +166,7 @@ body {
 .see-trailer {
     margin-top: 15px;
     padding: 10px 20px;
-    font-size: 14px; /* Adjust size */
+    font-size: 14px; 
     cursor: pointer;
     background-color: #ffe81f;
     color: black;
@@ -178,10 +179,11 @@ body {
     background-color: #fff;
     transform: scale(1.1);
 }
+
 /* Navigation Buttons */
 .nav-btn {
     padding: 10px;
-    font-size: 1.2em; /* Adjust size */
+    font-size: 1.2em; 
     cursor: pointer;
     background-color: #444;
     color: #fff;
@@ -195,19 +197,18 @@ body {
 }
 
 /* Thumbnails */
-
 .thumbnails {
     display: flex;
     align-items: center;
-    flex-wrap: wrap; /* Wrap thumbnails on smaller screens */
+    flex-wrap: wrap; 
     justify-content: center;
     transition: transform 0.5s ease-in-out;
     gap: 10px;
 }
 
 .thumbnail img {
-    width: 115px; /* Adjust size for smaller screens */
-    height: 180px; /* Adjust size */
+    width: 115px; 
+    height: 180px; 
     object-fit: cover;
     border-radius: 5px;
     cursor: pointer;
@@ -226,34 +227,34 @@ body {
 /* Media Queries for Smaller Screens */
 @media screen and (max-width: 768px) {
     .main-content {
-        flex-direction: column; /* Stack items vertically */
+        flex-direction: column; 
         align-items: center;
     }
 
     .description {
-        text-align: center; /* Center align text */
-        flex: 1 1 auto; /* Adjust flex behavior */
+        text-align: center; 
+        flex: 1 1 auto;
     }
 
     .image img {
         max-width: 100%;
-        height: auto; /* Ensure proper scaling */
+        height: auto; 
     }
 
     .controls button {
-        font-size: 14px; /* Reduce button size */
+        font-size: 14px; 
         padding: 8px 15px;
     }
 
     .thumbnail img {
-        width: 80px; /* Smaller thumbnails */
+        width: 80px; 
         height: 120px;
     }
 }
 
 @media screen and (max-width: 480px) {
     .controls {
-        gap: 5px; /* Reduce gap */
+        gap: 5px; 
     }
 
     .controls button {
@@ -262,15 +263,15 @@ body {
     }
 
     .description h1 {
-        font-size: 1.2rem; /* Smaller heading */
+        font-size: 1.2rem; 
     }
 
     .description p {
-        font-size: 0.9rem; /* Smaller text */
+        font-size: 0.9rem; 
     }
 
     .see-trailer {
-        font-size: 12px; /* Adjust button size */
+        font-size: 12px; 
         padding: 8px 12px;
     }
 
