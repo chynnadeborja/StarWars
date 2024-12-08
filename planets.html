@@ -3,12 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Star Wars Universe</title>
-    <link rel="stylesheet" href="planets.css">
+    <title>Document</title>
+    <link rel="stylesheet" href="plan.css">
     <link rel="stylesheet" href="media.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
+    
     <header class="header">
         <a href="#" class="logo">Star Wars</a>
 
@@ -28,51 +29,152 @@
         </nav>
     </header>
 
-    <section class="planets-section">
-        <div class="container">
-            <h1 class="title">Explore the Star Wars Universe</h1>
-            <p class="intro">
-                Click on a planet to uncover its secrets and learn more about its role in the Star Wars saga.
-            </p>
-            <div class="planets-grid">
-                <!-- Thumbnail for each planet -->
-                <div class="planet-thumbnail" onclick="showDetails('tatooine')">
-                    <img src="assets/tatooine.jpeg" alt="Tatooine">
-                    <h2>Tatooine</h2>
-                </div>
-                <div class="planet-thumbnail" onclick="showDetails('coruscant')">
-                    <img src="assets/coruscant.jpeg" alt="Coruscant">
-                    <h2>Coruscant</h2>
-                </div>
-                <div class="planet-thumbnail" onclick="showDetails('hoth')">
-                    <img src="assets/hoth.jpeg" alt="Hoth">
-                    <h2>Hoth</h2>
-                </div>
-                <div class="planet-thumbnail" onclick="showDetails('endor')">
-                    <img src="assets/endor.jpeg" alt="Endor">
-                    <h2>Endor</h2>
-                </div>
-                <div class="planet-thumbnail" onclick="showDetails('mustafar')">
-                    <img src="assets/mustafar.jpeg" alt="Mustafar">
-                    <h2>Mustafar</h2>
-                </div>
-                <div class="planet-thumbnail" onclick="showDetails('kamino')">
-                    <img src="assets/kamino.jpeg" alt="Kamino">
-                    <h2>Kamino</h2>
-                </div>
+    <main>
+        <section class="carousel next">
+            <div class="list">
+                <article class="item other_1">
+                    <div class="main-content" 
+                    style="background-image: url(assets/endorbg.jpg);background-size: cover; background-position: center;">
+                        <div class="content">
+                            <h2>Endor</h2>
+                            <p class="description">
+                                Endor is a forested moon orbiting the gas giant of the same name in the Outer Rim. It is home to the Ewok species, whose bravery helped the Rebel Alliance defeat the Empire in the Battle of Endor, leading to the fall of the second Death Star.
+                            </p>
+                        </div>
+                    </div>
+                    <figure class="image">
+                        <img src="assets/Endor-Photoroom.png" alt="Endor">
+                        <figcaption>Endor: The forest moon of hope</figcaption>
+                    </figure>
+                </article>
+                <article class="item active">
+                    <div class="main-content" 
+                    style="background-image: url(assets/corruscantbg.jpg);">
+                        <div class="content">
+                            <h2>Coruscant</h2>
+                            <p class="description">
+                                Coruscant is a bustling metropolis located at the center of the galaxy. It is the political heart of the Republic, home to the Jedi Temple, and the seat of the Galactic Senate. Its towering skyscrapers cover the entire surface, a city that never sleeps.
+                            </p>
+                        </div>
+                    </div>
+                    <figure class="image">
+                        <img src="assets/file (2).png" alt="">
+                        <figcaption>Corruscant: The shining heart of the galaxy</figcaption>
+                    </figure>
+                </article>
+                <article class="item other_2">
+                    <div class="main-content" 
+                    style="background-image: url(assets/hotbg.jpg);background-size: cover; background-position: center;">
+                        <div class="content">
+                            <h2>Hoth</h2>
+                            <p class="description">
+                                Hoth is an icy, remote planet located in the Outer Rim, known for its freezing conditions and vast snowfields. The Rebel Alliance established a base there during the Galactic Civil War, though it was eventually discovered by the Empire.
+                            </p>
+                        </div>
+                    </div>
+                    <figure class="image">
+                        <img src="assets/file (3).png" alt="">
+                        <figcaption>Hoth: The frozen battleground of the Rebels</figcaption>
+                    </figure>
+                </article>
+                <article class="item">
+                    <div class="main-content" 
+                    style="background-image: url(assets/mustafarbg.jpeg);background-size: cover; background-position: center;">
+                        <div class="content">
+                            <h2>Mustafar</h2>
+                            <p class="description">
+                                Mustafar is a volcanic planet located in the Outer Rim, notorious for its rivers of lava and fiery terrain. It became the site of the iconic duel between Anakin Skywalker and Obi-Wan Kenobi, where Anakin’s transformation into Darth Vader was sealed.
+                            </p>
+                        </div>
+                    </div>
+                    <figure class="image">
+                        <img src="assets/mustafar.png" alt="">
+                        <figcaption>Mustafar: The fiery world of transformation </figcaption>
+                    </figure>
+                </article>
+                <article class="item">
+                    <div class="main-content" 
+                    style="background-image: url(assets/jakkubg.jpg);background-size: cover; background-position: center;">
+                        <div class="content">
+                            <h2>Jakku</h2>
+                            <p class="description">
+                                Jakku is a remote desert planet located in the Western Reaches of the galaxy. It was the home of Rey, the scavenger who would eventually play a key role in the battle against the First Order.
+                            </p>
+                        </div>
+                    </div>
+                    <figure class="image">
+                        <img src="assets/jakku.png" alt="">
+                        <figcaption>Jakku: The desert wasteland of destiny</figcaption>
+                    </figure>
+                </article>
+                <article class="item">
+                    <div class="main-content" 
+                    style="background-image: url(assets/kaminobg.jpg);background-size: cover; background-position: center;">
+                        <div class="content">
+                            <h2>Kamino</h2>
+                            <p class="description">
+                                Kamino is a water-covered planet located in the Outer Rim, known for its towering storm clouds and oceanic environment. It is where the clone army was created, making it an essential location for the rise of the Galactic Republic.
+                            </p>
+                        </div>
+                    </div>
+                    <figure class="image">
+                        <img src="assets/kamino.png" alt="">
+                        <figcaption>Kamino:The stormy world of the clones</figcaption>
+                    </figure>
+                </article>
+                <article class="item">
+                    <div class="main-content" 
+                    style="background-image: url(assets/tatooinebg.jpg);background-size: cover; background-position: center;">
+                        <div class="content">
+                            <h2>Tatooine</h2>
+                            <p class="description">
+                                Tatooine is a harsh desert planet located in the Outer Rim Territories, infamous for its twin suns and extreme climate. It is the home planet of Anakin Skywalker and Luke Skywalker, playing a critical role in their destinies.
+                            </p>
+                        </div>
+                    </div>
+                    <figure class="image">
+                        <img src="assets/tatooine.png" alt="">
+                        <figcaption>Tatooine:The desert planet of twin suns</figcaption>
+                    </figure>
+                </article>
+                <article class="item">
+                    <div class="main-content" 
+                    style="background-image: url(assets/alderanbg.jpg);background-size: cover; background-position: center;">
+                        <div class="content">
+                            <h2>Alderaan</h2>
+                            <p class="description">
+                                Alderaan was a peaceful and affluent planet located in the Core Worlds, known for its beautiful landscapes and strong cultural and educational institutions. Unfortunately, it was destroyed by the Empire's Death Star in Episode IV, marking a pivotal moment in the Star Wars saga.
+                            </p>
+                        </div>
+                    </div>
+                    <figure class="image">
+                        <img src="assets/alderan.png" alt="">
+                        <figcaption>Alderaan: The lost world of peace</figcaption>
+                    </figure>
+                </article>
+                <article class="item">
+                    <div class="main-content" 
+                    style="background-image: url(assets/naboobg.jpg);background-size: cover; background-position: center;">
+                        <div class="content">
+                            <h2>Naboo</h2>
+                            <p class="description">
+                                Naboo is a lush, serene planet located in the Mid Rim, known for its striking natural beauty, vast plains, and expansive lakes. The planet was home to Queen Padmé Amidala and the famous Gungan species, including Jar Jar Binks.
+                            </p>
+                        </div>
+                    </div>
+                    <figure class="image">
+                        <img src="assets/naboo.png" alt="">
+                        <figcaption>Naboo: A paradise of beauty and harmony</figcaption>
+                    </figure>
+                </article>
             </div>
-            <!-- Detail Section -->
-            <div id="planet-details" class="planet-details hidden">
-                <button class="close-button" onclick="hideDetails()">×</button>
-                <h2 id="planet-title"></h2>
-                <img id="planet-image" src="" alt="Planet Image">
-                <p id="planet-description"></p>
+            <div class="arrows">
+                <button id="prev"><</button>
+                <button id="next">></button>
             </div>
-        </div>
-    </section>
-    
-    <script src="planet.js"></script>
+        </section>
+    </main>
 
+    <script src="plan.js"></script>
 </body>
-
 </html>
