@@ -27,6 +27,7 @@ body {
     justify-content: space-between;
     align-items: center;
     z-index: 100;
+    border-bottom: 3px solid #ffe81f; 
 }
 
 .header::before{
@@ -118,6 +119,7 @@ body {
 
 /* Character Cards */
 .characters {
+    border-radius: 10px;
     display: flex;
     justify-content: center;
     gap: 1.5rem;
@@ -125,21 +127,28 @@ body {
     flex-wrap: wrap;
 }
 
-.character-card {
-    width: 200px;
-    text-align: center;
-    cursor: pointer;
-    transition: transform 0.3s;
-    color: transparent;
-    -webkit-text-stroke: 0.5px #ffe81f;
-    text-decoration: none;
-    border: 2px solid #ffe81f;
+.character-details {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(0, 0, 0, 0.9); /* Semi-transparent background */
+    padding: 3rem;
     border-radius: 10px;
-    font-weight: 700;
+    width: 90%;
+    max-width: 900px; /* Increased max width */
+    display: none;
+    z-index: 200;
+    color: #ffe81f;
+    box-shadow: 0px 6px 25px rgba(0, 0, 0, 0.9);
+    border: 2px solid #ffe81f;
+    overflow-y: auto; /* Add scroll for large content */
+    max-height: 80vh; /* Limit height to viewport */
 }
 
 /* Glowing effect when the card is active */
 .character-card.active {
+    border-radius: 10px;
     box-shadow: 0 0 10px 1px rgba(255, 232, 31, 0.8); /* Glowing effect */
     animation: glow 1.5s ease-in-out infinite;  /* Animation for the glow */
 }
@@ -181,11 +190,12 @@ body {
     max-width: 700px;  /* Limit max width */
     display: none;
     z-index: 200;
-    color: #ffe81f;
+    color: #ffffff;
     box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.8);
 }
 
 .character-details.active {
+    border-radius: 10px;
     display: block;
     animation: glow 1.5s ease-in-out infinite;
 }
@@ -214,8 +224,8 @@ body {
 }
 
 .character-details img {
-    width: 150px;  /* Set a reasonable size */
-    height: auto;
+    width: 350px;  /* Set a reasonable size */
+    height: 300px;
     border-radius: 8px;
     object-fit: cover;
 }
