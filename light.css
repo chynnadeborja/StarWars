@@ -1,26 +1,27 @@
 @import url('https://fonts.cdnfonts.com/css/death-star');
 
-* {
-    margin: 0;
-    padding: 0;
+*{
+    margin:0;
+    padding:0;
     box-sizing: border-box;
     font-family: 'Death Star', sans-serif;
 }
-
 body {
     min-height: 100vh;
     background: url(assets/starsbg.jpeg) no-repeat center center fixed;
     background-size: cover;
     color: #ffffff;
-    padding-top: 100px; /* Adjusted to ensure content starts below navbar */
+    animation: change 70s infinite ease-in-out;
+    padding-top: 80px;
 }
 
-/* Navbar */
-.header {
+/*navbar*/
+
+.header{
     position: fixed;
     top: 0;
     left: 0;
-    width: 100%;
+    width:100%;
     padding: 1.3rem 10%;
     display: flex;
     justify-content: space-between;
@@ -28,34 +29,34 @@ body {
     z-index: 100;
 }
 
-.header::before {
-    content: '';
+.header::before{
+    content:'';
     position: absolute;
     top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+    left:0;
+    width:100%;
+    height:100%;
     background: rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(10px);
     z-index: -1;
 }
 
-.header::after {
-    content: '';
+.header::after{
+    content:'';
     position: absolute;
     top: 0;
-    left: -100%;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, .4), transparent);
+    left:-100%;
+    width:100%;
+    height:100%;
+    background: linear-gradient(90deg, transparent, rgba(255,255,255,.4), transparent);
     transition: .5s;
 }
 
-.header:hover::after {
-    left: 100%;
+.header:hover::after{
+    left:100%;
 }
 
-.logo {
+.logo{
     font-size: 2rem;
     color: transparent;
     -webkit-text-stroke: 0.5px #ffe81f;
@@ -72,96 +73,177 @@ body {
     margin-left: 2.5rem;
 }
 
-#check {
+#check{
     display: none;
 }
 
-.icons {
-    position: absolute;
+.icons{
+    position:absolute;
     right: 5%;
     font-size: 2.8rem;
     color: #ffe81f;
-    cursor: pointer;
+    cursor:pointer;
     display: none;
 }
 
-/* Content Section Alignment */
-main {
-    margin-top: 100px; /* Matches navbar height to avoid overlap */
-    padding: 2rem 10%;
-}
-
-/* Lightsaber Section */
-.lightsabers {
-    padding: 4rem 0;
-    text-align: center;
-    color: #fff;
-}
+/* Lightsabers Section */
 
 .lightsabers h1 {
-    font-size: 3rem;
-    color: #ffe81f;
-    text-shadow: 0 0 20px rgba(255, 232, 31, 0.8);
+    text-align: center;
+    font-size: 2.5rem;
+    color: #000;
+    -webkit-text-stroke: 0.5px #fff;
+    margin-bottom: 1rem;
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.7), 0 0 25px #ffff0c, 0 0 5px #ffe81f;
 }
 
 .lightsabers p {
-    margin-top: 1rem;
-    font-size: 1.2rem;
-    line-height: 1.6;
-}
-
-.gallery {
-    display: flex;
-    justify-content: center;
-    gap: 2rem;
-    margin-top: 3rem;
-}
-
-.lightsaber {
-    width: 200px;
     text-align: center;
-}
-
-.lightsaber img {
-    width: 100%;
-    border: 3px solid #ffe81f;
+    max-width: 600px;
+    margin: 0 auto; 
+    padding: 1rem;
+    background: rgba(0, 0, 0, 0);
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.333), transparent);
     border-radius: 10px;
-    box-shadow: 0 0 15px rgba(255, 232, 31, 0.7);
+    font-family: 'Courier New', Courier, monospace;
+    color:#ffe81f;
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.7), 0 0 25px #010100, 0 0 5px #ffe81f;
 }
 
-.lightsaber p {
-    margin-top: 0.5rem;
-    font-size: 1rem;
-    font-style: italic;
+
+.lightsaber-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 5rem;
+    margin-top: 2rem;
+}
+.lightsaber-list h3{
+    color: #000;
+    -webkit-text-stroke: 0.5px #fff;
+    margin-bottom: 1rem;
+
 }
 
-.fun-facts {
-    margin-top: 4rem;
+.card {
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 10px;
+    padding: 1rem;
+    text-align: center;
+    width: 200px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.fun-facts h2 {
-    font-size: 2rem;
-    color: #ffe81f;
-    text-shadow: 0 0 15px rgba(255, 232, 31, 0.7);
+.card img {
+    width: 180px;
+    height: 200px;
+    margin-bottom: 1rem;
 }
 
-.fun-facts ul {
-    list-style: none;
-    padding: 0;
-    margin: 2rem 0 0;
+.card:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 15px #ffe81f;
 }
 
-.fun-facts li {
-    font-size: 1.2rem;
-    margin: 0.8rem 0;
-    line-height: 1.5;
+.slider {
+    margin: 2rem auto;
+    width: 80%;
+    overflow: hidden;
     position: relative;
 }
 
-.fun-facts li::before {
-    content: "★";
-    position: absolute;
-    left: -1.5rem;
-    color: #ffe81f;
-    font-size: 1.5rem;
+.slider h2{
+    color: #000;
+    -webkit-text-stroke: 0.5px #ffe81f;
+    margin-bottom: 1rem;
+    
+}
+
+.slider-container {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slider-item {
+    flex: 0 0 100%;
+    display: flex;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 2rem;
+    border-radius: 10px;
+}
+
+.slider-item img {
+    width: 700px;
+    height: auto;
+    border-radius: 10px;
+    margin-right: 2rem;
+}
+
+.slider-item h3 {
+    color: #000;
+    -webkit-text-stroke: 0.5px #fff;
+    margin-bottom: 1rem;
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+.slider-item p {
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+.slider-controls {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+.slider-controls button {
+    background: #ffe81f;
+    border: none;
+    padding: 0.5rem 1rem;
+    margin: 0 0.5rem;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.slider-controls button:hover {
+    background: #ffffff;
+    color: #000;}
+
+    /* Media Queries for Small Screens */
+@media (max-width: 768px) {
+    .slider-item {
+        flex-direction: column; 
+        text-align: center;
+    }
+
+    .slider-item img {
+        margin: 0 0 1rem 0;
+        max-width: 200px; 
+    }
+
+    .slider-item h3 {
+        font-size: 1.2rem; 
+    }
+
+    .slider-item p {
+        font-size: 0.9rem; 
+    }
+}
+
+@media (max-width: 480px) {
+    .slider-item img {
+        max-width: 150px; 
+    }
+
+    .slider-item h3 {
+        font-size: 1rem; 
+    }
+
+    .slider-item p {
+        font-size: 0.8rem; 
+    }
 }
