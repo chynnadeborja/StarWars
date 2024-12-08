@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Star Wars Universe</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="planets.css">
     <link rel="stylesheet" href="media.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
@@ -27,6 +27,51 @@
             <a href="authors.html" style="--i:6;">Authors</a>
         </nav>
     </header>
+
+    <section class="planets-section">
+        <div class="container">
+            <h1 class="title">Explore the Star Wars Universe</h1>
+            <p class="intro">
+                Click on a planet to uncover its secrets and learn more about its role in the Star Wars saga.
+            </p>
+            <div class="planets-grid">
+                <!-- Thumbnail for each planet -->
+                <div class="planet-thumbnail" onclick="showDetails('tatooine')">
+                    <img src="assets/tatooine.jpeg" alt="Tatooine">
+                    <h2>Tatooine</h2>
+                </div>
+                <div class="planet-thumbnail" onclick="showDetails('coruscant')">
+                    <img src="assets/coruscant.jpeg" alt="Coruscant">
+                    <h2>Coruscant</h2>
+                </div>
+                <div class="planet-thumbnail" onclick="showDetails('hoth')">
+                    <img src="assets/hoth.jpeg" alt="Hoth">
+                    <h2>Hoth</h2>
+                </div>
+                <div class="planet-thumbnail" onclick="showDetails('endor')">
+                    <img src="assets/endor.jpeg" alt="Endor">
+                    <h2>Endor</h2>
+                </div>
+                <div class="planet-thumbnail" onclick="showDetails('mustafar')">
+                    <img src="assets/mustafar.jpeg" alt="Mustafar">
+                    <h2>Mustafar</h2>
+                </div>
+                <div class="planet-thumbnail" onclick="showDetails('kamino')">
+                    <img src="assets/kamino.jpeg" alt="Kamino">
+                    <h2>Kamino</h2>
+                </div>
+            </div>
+            <!-- Detail Section -->
+            <div id="planet-details" class="planet-details hidden">
+                <button class="close-button" onclick="hideDetails()">×</button>
+                <h2 id="planet-title"></h2>
+                <img id="planet-image" src="" alt="Planet Image">
+                <p id="planet-description"></p>
+            </div>
+        </div>
+    </section>
+    
+    <script src="planet.js"></script>
 
 </body>
 

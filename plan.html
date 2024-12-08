@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="plan.css">
+    <link rel="stylesheet" href="media.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    
+    <header class="header">
+        <a href="#" class="logo">Star Wars</a>
+
+        <input type="checkbox" id="check">
+        <label for="check" class="icons">
+            <i class='bx bx-menu' id="menu-icon"></i>
+            <i class='bx bx-x' id="close-icon"></i>
+        </label>
+        <nav class="navbar">
+            <a href="intro.html" style="--i:0;">Introduction</a>
+            <a href="index.html" style="--i:1;">Home</a>
+            <a href="movies.html" style="--i:2;">Movies</a>
+            <a href="characters.html" style="--i:3;">Characters</a>
+            <a href="planets.html" style="--i:4;">Planets</a>
+            <a href="lightsabers.html" style="--i:5;">Lightsabers</a>
+            <a href="authors.html" style="--i:6;">Authors</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="carousel next">
+            <div class="list">
+                <article class="item other_1">
+                    <div class="main-content" 
+                    style="background-image: url(assets/endorbg.jpg);background-size: cover; background-position: center;">
+                        <div class="content">
+                            <h2>Endor</h2>
+                            <p class="description">
+                                A lush forest moon that was the site of the Rebel Alliance's pivotal victory over the Galactic Empire. Known for its native Ewoks.
+                            </p>
+                        </div>
+                    </div>
+                    <figure class="image">
+                        <img src="assets/Endor-Photoroom.png" alt="Endor">
+                        <figcaption>Endor: The forest moon</figcaption>
+                    </figure>
+                </article>
+                <article class="item active">
+                    <div class="main-content" 
+                    style="background-image: url(assets/corruscantbg.jpg);">
+                        <div class="content">
+                            <h2>Coruscant</h2>
+                            <p class="description">
+                                The galactic capital, a sprawling metropolis where politics and power converge.
+                            </p>
+                        </div>
+                    </div>
+                    <figure class="image">
+                        <img src="assets/file (2).png" alt="">
+                        <figcaption>Corruscant:</figcaption>
+                    </figure>
+                </article>
+                <article class="item other_2">
+                    <div class="main-content" 
+                    style="background-image: url(assets/hotbg.jpg);background-size: cover; background-position: center;">
+                        <div class="content">
+                            <h2>Hoth</h2>
+                            <p class="description">
+                                A frozen wasteland and the site of the Rebel Alliance's iconic Echo Base.
+                            </p>
+                        </div>
+                    </div>
+                    <figure class="image">
+                        <img src="assets/file (3).png" alt="">
+                        <figcaption>Hoth:</figcaption>
+                    </figure>
+                </article>
+                <article class="item">
+                    <div class="main-content" 
+                    style="background-image: url(assets/mustafarbg.jpeg);background-size: cover; background-position: center;">
+                        <div class="content">
+                            <h2>Mustafar</h2>
+                            <p class="description">
+                                A volcanic world where Anakin Skywalker met his fateful transformation into Darth Vader.
+                            </p>
+                        </div>
+                    </div>
+                    <figure class="image">
+                        <img src="assets/mustafar.png" alt="">
+                        <figcaption>Mustafar: </figcaption>
+                    </figure>
+                </article>
+                <article class="item">
+                    <div class="main-content" 
+                    style="background-image: url(assets/jakkubg.jpg);background-size: cover; background-position: center;">
+                        <div class="content">
+                            <h2>Jakku</h2>
+                            <p class="description">
+                            
+                            </p>
+                        </div>
+                    </div>
+                    <figure class="image">
+                        <img src="assets/jakku.png" alt="">
+                        <figcaption>Jakku:</figcaption>
+                    </figure>
+                </article>
+                <article class="item">
+                    <div class="main-content" 
+                    style="background-image: url(assets/kaminobg.jpg);background-size: cover; background-position: center;">
+                        <div class="content">
+                            <h2>Kamino</h2>
+                            <p class="description">
+                            
+                            </p>
+                        </div>
+                    </div>
+                    <figure class="image">
+                        <img src="assets/kamino.png" alt="">
+                        <figcaption>Kamino:</figcaption>
+                    </figure>
+                </article>
+                <article class="item">
+                    <div class="main-content" 
+                    style="background-image: url(assets/tatooinebg.jpg);background-size: cover; background-position: center;">
+                        <div class="content">
+                            <h2>Tatooine</h2>
+                            <p class="description">
+                            
+                            </p>
+                        </div>
+                    </div>
+                    <figure class="image">
+                        <img src="assets/tatooine.png" alt="">
+                        <figcaption>Tatooine:</figcaption>
+                    </figure>
+                </article>
+            </div>
+            <div class="arrows">
+                <button id="prev"><</button>
+                <button id="next">></button>
+            </div>
+        </section>
+    </main>
+
+    <script src="plan.js"></script>
+</body>
+</html>
