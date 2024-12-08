@@ -37,6 +37,7 @@ main {
     justify-content: space-between;
     align-items: center;
     z-index: 100;
+    border-bottom: 3px solid #ffe81f; 
 }
 
 .header::before{
@@ -86,7 +87,8 @@ main {
     font-size: 1.5rem;
     color: transparent;  
     -webkit-text-stroke: 0.5px #ffe81f;
-    font-weight: bold; }
+    font-weight: bold; 
+}
 
 #check{
     display: none;

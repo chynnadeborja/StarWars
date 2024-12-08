@@ -1,212 +1,204 @@
 // Array storing character details
 const characterDetails = [
-  {
-    name: "Luke Skywalker",
-    category: "rebel",
-    image: "char/lukeskywalker.jpg",
-    details: "Luke Skywalker is a Jedi Knight who plays a central role in defeating the Galactic Empire. He is the son of Anakin Skywalker and Padmé Amidala."
-  },
-  {
-    name: "Leia Organa",
-    category: "rebel",
-    image: "char/princessleia.jpg",
-    details: "Leia Organa is a leader of the Rebel Alliance and a princess of Alderaan. She is known for her courage and strategic mind."
-  },
-  {
-    name: "Han Solo",
-    category: "rebel",
-    image: "char/hansolo.jpg",
-    details: "A smuggler who becomes a hero of the Rebel Alliance. Known for his charm and piloting skills, he plays a key role in destroying the Death Star and defeating the Empire."
-  },
-  {
-    name: "Chewbacca",
-    category: "rebel",
-    image: "char/chewbacca.jpg",
-    details: "Wookiee warrior and Han Solo's companion."
-  },
-  {
-    name: "Rey",
-    category: "rebel",
-    image: "char/chewbacca.jpg",
-    details:"Rey is the main protagonist of the Star Wars sequel trilogy. A scavenger from Jakku, she discovers her strong connection to the Force and becomes a key member of the Resistance. Throughout her journey, Rey seeks to understand her identity and her place in the galaxy. She learns she is the granddaughter of Emperor Palpatine but rejects her Sith legacy, choosing to embrace the Jedi path. Rey ultimately defeats Palpatine, adopts the Skywalker name, and becomes a symbol of hope and redemption for the galaxy."
-  },
-  {
-    "name": "Jyn Erso",
-    "category": "rebel",
-    "details": "The daughter of Galen Erso, an Imperial scientist, who leads a band of rebels on a mission to steal the Death Star plans in Rogue One. Her efforts pave the way for the Rebel Alliance's victory."
-  },
-  {
-    "name": "Poe Dameron",
-    "category": "rebel",
-    image: "",
-    "details": "A skilled pilot for the Resistance and a loyal leader in the fight against the First Order. Known for his bravery and loyalty to Leia Organa."
-  },
-  {
-    name: "Cassian Andor",
-    category: "rebel",
-    image: "",
-    details: "Rebel intelligence officer, co-star with Jyn Erso in Rogue One."
-  },
-  {
-    name: "Obi-Wan Kenobi",
-    category: "rebel",
-    image: "",
-    details: " Jedi Master, mentor to both Anakin and Luke Skywalker."
-  },
-  {
-    name: "Mon Mothma",
-    category: "rebel",
-    image: "",
-    details: "  Political leader of the Rebel Alliance."
-  },
-  {
-    name: "Lando Calrissian",
-    category: "rebel",
-    image: "",
-    details: "Former smuggler, joined the Rebel Alliance."
-  },
-  {
-    name: "Wedge Antilles",
-    category: "rebel",
-    image: "",
-    details: "Rebel pilot who played key roles in multiple battles."
-  },
-  {
-    name: "Ahsoka Tano",
-    category: "rebel",
-    image: "",
-    details: "Former Jedi, major character in Star Wars: The Clone Wars and Star Wars Rebels."
-  },
-  {
-    name: "Darth Vader",
-    category: "empire",
-    image: "char/vader.jpg",
-    details:  "A fallen Jedi Knight turned Sith Lord who serves as the Emperor's enforcer. Despite his dark deeds, he is redeemed by his son, Luke Skywalker, and sacrifices himself to destroy the Emperor."
-  },
-  {
-    name: "Emperor Palpatine",
-    category: "empire",
-    image: "char/palpatine.jpeg",
-    details: "Emperor Palpatine is the Dark Lord of the Sith who orchestrated the rise of the Galactic Empire."
-  },
-  {
-
-    name: "Grand Moff Tarkin",
-    category: "Empire",
-    image:"",
-    details: "A ruthless commander of the Galactic Empire, responsible for overseeing the construction and operation of the Death Star. Known for his cold efficiency and loyalty to Emperor Palpatine."
-  },
-  {
-    name: "Kylo Ren",
-    category: "Empire",
-    image: "",
-    details: "The son of Leia Organa and Han Solo, he turns to the dark side and becomes a leader of the First Order. Struggles with his identity and eventually redeems himself by helping Rey defeat Emperor Palpatine."
-  },
-  {
-    name: "Captain Phasma",
-    category: "Empire",
-    image: "",
-    details: "A high-ranking stormtrooper commander in the First Order, known for her chrome armor and strict discipline. She oversees the First Order's stormtrooper corps."
-  },
-  {
-    name: "General Hux",
-    category: "Empire",
-    image: "",
-    details:  "A calculating and ambitious leader in the First Order, responsible for the Starkiller Base. He harbors a bitter rivalry with Kylo Ren."
-  },
-  {
-    name: "Boba Fett",
-    category: "Empire",
-    image: "",
-    details:  "Bounty hunter employed by the Empire, later works for Jabba the Hutt."
-  },
-  {
-    name: "Darth Maul",
-    category: "Empire",
-    image: "",
-    details:  "Sith apprentice, primarily active in The Phantom Menace."
-  },
-  {
-    name: "Director Krennic",
-    category: "Empire",
-    image: "",
-    details:  " Officer in the Imperial military, responsible for the Death Star project."
-  },
-  {
-    name: "Admiral Piett",
-    category: "Empire",
-    image: "",
-    details:  " Imperial officer in The Empire Strikes Back and Return of the Jedi."
-  },
-  {
-    name: "Stormtroopers",
-    category: "Empire",
-    image: "",
-    details:  "Elite soldiers of the Empire"
-  },
-  {
-    name: "R2-D2",
-    category: "Bots",
-    image: "char/r2d2.jpeg",
-    details: "R2-D2 is a resourceful astromech droid who assists the Rebel Alliance and the Jedi Order in countless missions."
-  },
-  {
-    name: "C-3PO",
-    category: "Bots",
-    image: "char/c3po.jpeg",
-    details: "C-3PO is a protocol droid fluent in over six million forms of communication and is often found alongside R2-D2."
-  },
-  {
-    name: "BB-8",
-    category: "Bots",
-    image: "char/BB8.jpeg",
-    details: "A spherical astromech droid loyal to Poe Dameron. BB-8 provides vital assistance to the Resistance during their fight against the First Order."
-  },
-  {
-    name: "K-2SO",
-    category: "Bots",
-    image: "char/K2SO.jpg",
-    details: "A reprogrammed Imperial security droid who aids Jyn Erso and Cassian Andor in Rogue One. Known for his sarcastic wit and combat skills."
-  },
-  {
-    name: "IG-88",
-    category: "Bots",
-    image: "char/K2SO.jpg",
-    details: "Bounty hunter droid."
-  },
-  {
-    name: "L3-37",
-    category: "Bots",
-    image: "char/K2SO.jpg",
-    details: "Lando Calrissian's droid partner in Solo: A Star Wars Story."
-  },
-  {
-    name: "TX-21",
-    category: "Bots",
-    image: "char/K2SO.jpg",
-    details: " A battle droid, part of the Separatist army."
-  },
-  {
-    name: "R4-P17",
-    category: "Bots",
-    image: "char/K2SO.jpg",
-    details: "Astromech droid serving Jedi Master Obi-Wan Kenobi."
-  },
-  {
-    name: "Chopper",
-    category: "Bots",
-    image: "char/K2SO.jpg",
-    details: " Astromech droid, member of the Star Wars Rebels crew."
-  },
-  {
-    name: "General Grievous",
-    category: "Bots",
-    image: "char/K2SO.jpg",
-    details: "Droid General in The Clone Wars, leader of the Separatist army."
-  },
-
-
-   
+      {
+        "name": "Luke Skywalker",
+        "category": "rebel",
+        "image": "char/lukeskywalker.jpg",
+        "details": "Luke Skywalker is a Jedi Knight central to the Rebel Alliance's fight against the Galactic Empire. He is the son of Anakin Skywalker and Padmé Amidala and plays a critical role in restoring peace to the galaxy."
+      },
+      {
+        "name": "Leia Organa",
+        "category": "rebel",
+        "image": "char/princessleia.jpg",
+        "details": "Leia Organa is a fearless leader of the Rebel Alliance, a princess of Alderaan, and a skilled diplomat and strategist. She is also the twin sister of Luke Skywalker."
+      },
+      {
+        "name": "Han Solo",
+        "category": "rebel",
+        "image": "char/hansolo.jpg",
+        "details": "Han Solo, a charismatic smuggler turned Rebel hero, is known for his piloting skills and bravery. He played a crucial role in destroying the Death Star and leading the fight against the Empire."
+      },
+      {
+        "name": "Chewbacca",
+        "category": "rebel",
+        "image": "char/chewbacca.jpg",
+        "details": "Chewbacca is a loyal Wookiee warrior and co-pilot of the Millennium Falcon. As Han Solo's trusted friend, he aids the Rebel Alliance in its struggle against the Empire."
+      },
+      {
+        "name": "Rey",
+        "category": "rebel",
+        "image": "char/rey.jpg",
+        "details": "Rey is a powerful Force-sensitive scavenger who becomes a key figure in the Resistance. She discovers her true lineage as the granddaughter of Emperor Palpatine but chooses the Jedi path, defeating her dark heritage to bring hope to the galaxy."
+      },
+      {
+        "name": "Jyn Erso",
+        "category": "rebel",
+        "image": "char/jynerso.jpg",
+        "details": "Jyn Erso leads a daring mission to steal the Death Star plans in Rogue One. The daughter of Galen Erso, her bravery ensures the Rebel Alliance gains the critical information needed to defeat the Empire."
+      },
+      {
+        "name": "Poe Dameron",
+        "category": "rebel",
+        "image": "char/poedameron.jpg",
+        "details": "Poe Dameron is a skilled Resistance pilot known for his bravery and leadership. A loyal ally to Leia Organa, he plays a vital role in the fight against the First Order."
+      },
+      {
+        "name": "Cassian Andor",
+        "category": "rebel",
+        "image": "char/cassianandor.jpg",
+        "details": "Cassian Andor is a Rebel intelligence officer dedicated to the cause. He partners with Jyn Erso on the mission to retrieve the Death Star plans in Rogue One."
+      },
+      {
+        "name": "Obi-Wan Kenobi",
+        "category": "rebel",
+        "image": "char/obiwan.jpg",
+        "details": "Obi-Wan Kenobi is a wise Jedi Master who trained both Anakin and Luke Skywalker. His guidance helps Luke embrace his destiny as a Jedi."
+      },
+      {
+        "name": "Mon Mothma",
+        "category": "rebel",
+        "image": "char/monmothma.jpg",
+        "details": "Mon Mothma is a prominent political leader of the Rebel Alliance, orchestrating its efforts against the Empire."
+      },
+      {
+        "name": "Lando Calrissian",
+        "category": "rebel",
+        "image": "char/landocalrissian.jpg",
+        "details": "Lando Calrissian is a former smuggler turned hero of the Rebel Alliance. He plays a key role in the destruction of the second Death Star."
+      },
+      {
+        "name": "Yoda",
+        "category": "rebel",
+        "image": "char/yoda.jpg",
+        "details": "Yoda is a legendary Jedi Master, known for his wisdom and strength in the Force. He trains Luke Skywalker and unlocks the secret to immortality."
+      },
+      {
+        "name": "Wedge Antilles",
+        "category": "rebel",
+        "image": "char/wedgeantilles.jpg",
+        "details": "Wedge Antilles is a talented Rebel pilot who contributes significantly to victories in key battles, including the destruction of both Death Stars."
+      },
+      {
+        "name": "Ahsoka Tano",
+        "category": "rebel",
+        "image": "char/ahsokatano.jpg",
+        "details": "Ahsoka Tano, once a Jedi apprentice to Anakin Skywalker, becomes a key figure in the Rebellion after leaving the Jedi Order."
+      },
+      {
+        "name": "Qui-Gon Jinn",
+        "category": "rebel",
+        "image": "char/quigon.jpg",
+        "details": "Qui-Gon Jinn was a maverick Jedi Master who discovered Anakin Skywalker and believed him to be the Chosen One."
+      },
+      {
+        "name": "Padmé Amidala",
+        "category": "rebel",
+        "image": "char/padmeamidala.jpg",
+        "details": "Padmé Amidala was a Queen of Naboo and later a senator. A dedicated advocate for peace, she is the mother of Luke Skywalker and Leia Organa."
+      },
+      {
+        "name": "Mace Windu",
+        "category": "rebel",
+        "image": "char/macewindu.jpg",
+        "details": "Mace Windu was a senior Jedi Master known for his combat skills and strong leadership during the Clone Wars."
+      },
+      {
+        "name": "Darth Vader",
+        "category": "empire",
+        "image": "char/vader.jpg",
+        "details": "Once the Jedi Anakin Skywalker, Darth Vader becomes a powerful Sith Lord. He redeems himself by saving his son, Luke, and destroying Emperor Palpatine."
+      },
+      {
+        "name": "Emperor Palpatine",
+        "category": "empire",
+        "image": "char/palpatine.jpeg",
+        "details": "Emperor Palpatine, also known as Darth Sidious, is the Dark Lord of the Sith who manipulates events to rise to power and create the Galactic Empire."
+      },
+      {
+        "name": "Grand Moff Tarkin",
+        "category": "empire",
+        "image": "char/grandmoff.jpg",
+        "details": "A ruthless Imperial commander, Grand Moff Tarkin oversees the construction and operation of the Death Star."
+      },
+      {
+        "name": "Kylo Ren",
+        "category": "empire",
+        "image": "char/kyloren (1).jpg",
+        "details": "The son of Leia Organa and Han Solo, Kylo Ren struggles with his dark side as a leader of the First Order. He redeems himself by aiding Rey in defeating Emperor Palpatine."
+      },
+      {
+        "name": "Boba Fett",
+        "category": "empire",
+        "image": "char/bobafett.jpg",
+        "details": "Boba Fett is a notorious bounty hunter, initially working for the Empire and later carving his own path in the galaxy."
+      },
+      {
+        "name": "Darth Maul",
+        "category": "empire",
+        "image": "char/darthmaul.jpg",
+        "details": "Darth Maul is a Sith apprentice to Emperor Palpatine. Known for his iconic double-bladed lightsaber, he plays a pivotal role in The Phantom Menace."
+      },
+      {
+        "name": "Admiral Piett",
+        "category": "empire",
+        "image": "char/admiralpiett.jpg",
+        "details": "Admiral Piett is a loyal officer in the Galactic Empire, serving under Darth Vader in The Empire Strikes Back and Return of the Jedi."
+      },
+      {
+        "name": "Stormtroopers",
+        "category": "empire",
+        "image": "char/storm.jpg",
+        "details": "Stormtroopers are the elite soldiers of the Galactic Empire, known for their iconic white armor and loyalty to the Emperor."
+      },
+      {
+        "name": "Count Dooku",
+        "category": "empire",
+        "image": "char/countdooku.jpg",
+        "details": "Count Dooku, also known as Darth Tyranus, is a Sith Lord and former Jedi who leads the Separatist movement during the Clone Wars."
+      },
+    
+    {
+      name: "R2-D2",
+      category: "Bots",
+      image: "char/r2d2.jpeg",
+      details: "R2-D2 is a resourceful astromech droid who assists the Rebel Alliance and the Jedi Order in countless missions."
+    },
+    {
+      name: "C-3PO",
+      category: "Bots",
+      image: "char/c3po.jpeg",
+      details: "C-3PO is a protocol droid fluent in over six million forms of communication and is often found alongside R2-D2."
+    },
+    {
+      name: "BB-8",
+      category: "Bots",
+      image: "char/1bb8.jpg",
+      details: "A spherical astromech droid loyal to Poe Dameron. BB-8 provides vital assistance to the Resistance during their fight against the First Order."
+    },
+    {
+      name: "K-2SO",
+      category: "Bots",
+      image: "char/K2SO.jpg",
+      details: "A reprogrammed Imperial security droid who aids Jyn Erso and Cassian Andor in Rogue One. Known for his sarcastic wit and combat skills."
+    },
+    {
+      name: "R4-P17",
+      category: "Bots",
+      image: "char/R4-P17.png",
+      details: "Astromech droid serving Jedi Master Obi-Wan Kenobi."
+    },
+    {
+      name: "Chopper",
+      category: "Bots",
+      image: "char/chop.jpeg",
+      details: " Astromech droid, member of the Star Wars Rebels crew."
+    },
+    {
+      name: "General Grievous",
+      category: "Bots",
+      image: "char/generalgrievous.jpg",
+      details: "Droid General in The Clone Wars, leader of the Separatist army."
+    },
 ];
 
 // Select all the character cards
