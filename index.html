@@ -11,7 +11,6 @@
 <body>
     <header class="header">
         <a href="#" class="logo">Star Wars</a>
-
         <input type="checkbox" id="check">
         <label for="check" class="icons">
             <i class='bx bx-menu' id="menu-icon"></i>
@@ -28,6 +27,87 @@
         </nav>
     </header>
 
-</body>
+    <!-- Homepage Content -->
+    <section class="home-banner">
+        <img src="assets/Display.jpg" alt="Star Wars Universe" class="banner-image">
+        <h1 class="banner-text">A Galaxy Far, Far Away Awaits You</h1>
+    </section>
 
+    <section class="home-content">
+        <div class="summary">
+            <h1>Welcome to the Star Wars Universe</h1>
+            <p>
+                Dive into the expansive Star Wars universe! From epic battles to fascinating lore, 
+                this site is a hub for fans and newcomers alike. Explore movies, meet iconic characters, 
+                and discover the planets and technology that make this galaxy unforgettable.
+            </p>
+        </div>
+
+        <!-- Highlighted Features -->
+        <div class="features">
+            <h2>Explore the Star Wars Universe</h2>
+            <div class="feature-list">
+                <div class="feature">
+                    <i class='bx bx-film'></i>
+                    <h3>Movies</h3>
+                    <p>Dive into the Star Wars cinematic saga.</p>
+                    <a href="mov.html" class="feature-btn">See More</a>
+                </div>
+                <div class="feature">
+                    <i class='bx bx-user'></i>
+                    <h3>Characters</h3>
+                    <p>Learn about legendary heroes and iconic villains.</p>
+                    <a href="characters.html" class="feature-btn">See More</a>
+                </div>
+                <div class="feature">
+                    <i class='bx bx-world'></i>
+                    <h3>Planets</h3>
+                    <p>Explore the diverse worlds of the galaxy.</p>
+                    <a href="planets.html" class="feature-btn">See More</a>
+                </div>
+                <div class="feature">
+                    <svg class="feature-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0,0,256,256" width="50px" height="50px" fill-rule="nonzero"><g fill="#ffe81f" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><g transform="scale(5.12,5.12)"><path d="M45,2c-0.80078,0 -1.55469,0.3125 -2.12109,0.87891l-21.87891,21.87891v2.82813l23.29297,-23.29297c0.19531,-0.19531 0.44922,-0.29297 0.70703,-0.29297c0.25781,0 0.51172,0.09766 0.70703,0.29297c0.39063,0.39063 0.39063,1.02344 0,1.41406l-24.70703,24.70703v2.82813l26.12109,-26.12109c0.56641,-0.56641 0.87891,-1.32031 0.87891,-2.12109c0,-0.80078 -0.3125,-1.55469 -0.87891,-2.12109c-0.56641,-0.56641 -1.32031,-0.87891 -2.12109,-0.87891zM19,26.36328l-8.32422,8.3125l-1.67578,-1.67578l-3,3l1.67578,1.67578l-5.67578,5.66797l1.32813,1.32813l-1.32812,1.32813l2,2l1.32813,-1.32812l1.32813,1.32813l12.34375,-12.32812zM17,31.1875v3.65625l-0.87109,0.87109l-1.82812,-1.82812zM12.88672,35.29688l1.82813,1.82813l-8.05859,8.04688l-1.82812,-1.82812z"></path></g></g></svg>
+                    <h3>Lightsabers</h3>
+                    <p>Uncover the history and lore of these iconic weapons.</p>
+                    <a href="lightsabers.html" class="feature-btn">See More</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Trivia Slider -->
+        <div class="trivia-slider">
+            <h2>Did You Know?</h2>
+            <div class="slider">
+                <div class="slide">Yoda's species has never been named in Star Wars lore.</div>
+                <div class="slide">The sound of a TIE fighter was created using an elephant's trumpet mixed with a car driving on wet pavement.</div>
+                <div class="slide">Chewbacca's voice was a mix of bear, walrus, lion, and badger sounds.</div>
+                <div class="slide">The Star Wars universe spans over 25,000 years of fictional history.</div>
+                <div class="slide">Luke Skywalker was originally named Luke Starkiller in early drafts of the script.</div>
+                <div class="slide">The Millennium Falcon design was inspired by a hamburger with an olive on the side.</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2024 Star Wars Universe. All rights reserved.</p>
+        <p>May the Force be with you.</p>
+    </footer>
+
+    <script>
+        // JavaScript for Trivia Slider
+        const slides = document.querySelectorAll('.slide');
+        let index = 0;
+
+        function showSlide() {
+            slides.forEach((slide, i) => {
+                slide.style.display = i === index ? 'block' : 'none';
+            });
+            index = (index + 1) % slides.length;
+        }
+
+        setInterval(showSlide, 3000); // Change slide every 3 seconds
+        showSlide(); // Initialize slider
+    </script>
+</body>
 </html>
